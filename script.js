@@ -20,12 +20,13 @@ document.getElementById("salaryForm").addEventListener("submit", function (e) {
   const netSalary = grossSalary - deduction;
 
   // Display results
-  document.getElementById("normalOTPay").textContent = `Normal OT Pay: ₹ ${normalOTPay.toFixed(2)}`;
-  document.getElementById("specialOTPay").textContent = `Special OT Pay: ₹ ${specialOTPay.toFixed(2)}`;
-  document.getElementById("lieuLeavePay").textContent = `Lieu Leave Pay: ₹ ${lieuLeavePay.toFixed(2)}`;
-  document.getElementById("grossSalary").textContent = `Gross Salary: ₹ ${grossSalary.toFixed(2)}`;
-  document.getElementById("deduction").textContent = `Deduction (8%): ₹ ${deduction.toFixed(2)}`;
-  document.getElementById("netSalary").textContent = `Net Salary: ₹ ${netSalary.toFixed(2)}`;
+  document.getElementById("normalOTPay").textContent = `Normal OT Pay: Rs. ${normalOTPay.toFixed(2)}`;
+  document.getElementById("specialOTPay").textContent = `Special OT Pay: Rs. ${specialOTPay.toFixed(2)}`;
+  document.getElementById("lieuLeavePay").textContent = `Lieu Leave Pay: Rs. ${lieuLeavePay.toFixed(2)}`;
+  document.getElementById("grossSalary").textContent = `Gross Salary: Rs. ${grossSalary.toFixed(2)}`;
+  document.getElementById("deduction").textContent = `Deduction (8%): Rs. ${deduction.toFixed(2)}`;
+  document.getElementById("netSalary").textContent = `Net Salary: Rs. ${netSalary.toFixed(2)}`;
 
   document.getElementById("result").style.display = "block";
 });
+
