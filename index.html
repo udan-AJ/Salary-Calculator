@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salary Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💼 Salary Calculator</h1>
+    <form id="salaryForm">
+      <div class="form-group">
+        <label for="basicSalary">Basic Salary (₹)</label>
+        <input type="number" id="basicSalary" required />
+      </div>
+
+      <div class="form-group">
+        <label for="normalOT">Normal OT Hours</label>
+        <input type="number" id="normalOT" required />
+      </div>
+
+      <div class="form-group">
+        <label for="specialOT">Special OT Hours</label>
+        <input type="number" id="specialOT" required />
+      </div>
+
+      <div class="form-group">
+        <label for="lieuLeaves">Special Lieu Leaves</label>
+        <input type="number" id="lieuLeaves" required />
+      </div>
+
+      <button type="submit">Calculate</button>
+    </form>
+
+    <div class="result" id="result" style="display: none;">
+      <h2>💰 Salary Breakdown</h2>
+      <p id="normalOTPay"></p>
+      <p id="specialOTPay"></p>
+      <p id="lieuLeavePay"></p>
+      <hr />
+      <p id="grossSalary"></p>
+      <p id="deduction"></p>
+      <p id="netSalary" class="net"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
